@@ -15,8 +15,8 @@ install:
     # install deps
     - yarn install
 script:
-    - yarn test
-    - yarn build
+    #- yarn test
+    #- yarn build
     # build docker images
     - docker build -t samihan/go_webapp .
     - docker tag samihan/go_webapp registry.heroku.com/$HEROKU_APP_NAME/web
