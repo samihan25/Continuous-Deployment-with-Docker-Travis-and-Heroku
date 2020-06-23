@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net"
 	"net/http"
+	"os"
 	"time"
 )
 
@@ -20,7 +21,11 @@ func main() {
 	fmt.Println("Server is running ....")
 	fmt.Println("Press Ctrl+C to close the server.")
 	http.HandleFunc("/", helloWorld)
-	http.ListenAndServe(":8080", nil)
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+	http.ListenAndServe(":"+port, nil)
 	//srv := &http.Server{Addr: ":8080"}
 	//go func() {
 	//	srv.ListenAndServe()
