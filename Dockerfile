@@ -10,7 +10,7 @@ WORKDIR /
 
 RUN go build server.go
 
-ENTRYPOINT [ "./server" ]
+ENTRYPOINT [ "./server &" ]
 
 # Document that the service listens on port 8080.
 EXPOSE 8080

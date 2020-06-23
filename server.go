@@ -18,7 +18,7 @@ func helloWorld(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	fmt.Println("Server is running ....")
-	fmt.Println("Press Ctrl+C to close the server. ")
+	fmt.Println("Press Ctrl+C to close the server.")
 	http.HandleFunc("/", helloWorld)
 	http.ListenAndServe(":8080", nil)
 	//srv := &http.Server{Addr: ":8080"}
