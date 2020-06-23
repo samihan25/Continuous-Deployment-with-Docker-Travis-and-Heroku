@@ -13,6 +13,8 @@ RUN go build server.go
 #ENTRYPOINT [ "./server &" ]
 CMD [ "./server","&" ]
 
+RUN if [ "$PORT" == "" ]; then export PORT=8080;
+
 ENV port=$PORT
 
 # Document that the service listens on port 8080.
