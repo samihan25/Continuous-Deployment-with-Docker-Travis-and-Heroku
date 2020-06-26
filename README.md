@@ -21,3 +21,5 @@ See deployed app here: [click here](https://samihan.herokuapp.com/)
 ## Flow chart PDF
 ![Flow diagram](https://github.com/samihan25/CD_DTH/blob/master/DevOps_%20flow_chart_2.pdf)
 <br><br>
+
+### Hit Counter:  [![HitCount](http://hits.dwyl.com/samihan25/CD_DTH.svg)](http://hits.dwyl.com/samihan25/CD_DTH)
