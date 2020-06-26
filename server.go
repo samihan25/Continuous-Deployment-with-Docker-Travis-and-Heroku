@@ -5,6 +5,7 @@ import (
 	"net"
 	"net/http"
 	"os"
+	"runtime"
 	"time"
 )
 
@@ -28,13 +29,18 @@ func helloWorld(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "\n\n")
 	//fmt.Fprintf(w, "And I am ..... Ironman\n")
 
+	//Print IP address
 	ipAddress, _, _ := net.SplitHostPort(r.RemoteAddr)
 	fmt.Fprintf(w, "Your IP address : %s\n\n", ipAddress)
 
+	//Print Indian standard time
 	nowTime, nowDate := ist()
 	fmt.Fprintf(w, "Indian Standard Time :-\n")
 	fmt.Fprintf(w, "Time : %s\n", nowTime)
 	fmt.Fprintf(w, "Date : %s\n\n", nowDate)
+
+	//Print the Operating System
+	fmt.Fprintf(w, "Operating System of server is : %s\n\n", runtime.GOOS)
 }
 
 func main() {
