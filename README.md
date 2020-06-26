@@ -12,7 +12,7 @@ You can see Docker Hub Repository here: [click here](https://hub.docker.com/r/sa
 See deployed app here: [click here](https://samihan.herokuapp.com/)
 
 ## Flow chart
-![Flow diagram](https://github.com/samihan25/CD_DTH/blob/master/DevOps%20flow%20chart%202.png)
+![Flow diagram](https://github.com/samihan25/CD_DTH/blob/master/DevOp_flow_chart_2.png)
 
 ## Flow chart PDF
-![Flow diagram](https://github.com/samihan25/CD_DTH/blob/master/DevOps%20flow%20chart%202.pdf)
+![Flow diagram](https://github.com/samihan25/CD_DTH/blob/master/DevOp_flow_chart_2.pdf)
