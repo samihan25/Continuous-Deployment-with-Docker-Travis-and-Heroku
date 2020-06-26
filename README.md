@@ -15,9 +15,9 @@ See deployed app here: [click here](https://samihan.herokuapp.com/)
 <br><br>
 
 ## Flow chart
-![Flow diagram](https://github.com/samihan25/CD_DTH/DevOps_flow_chart_2.png)
+![Flow diagram](https://github.com/samihan25/CD_DTH/blob/master/DevOps_%20flow_chart_2.png)
 <br><br>
 
 ## Flow chart PDF
-![Flow diagram](https://github.com/samihan25/CD_DTH/DevOps_flow_chart_2.pdf)
+![Flow diagram](https://github.com/samihan25/CD_DTH/blob/master/DevOps_%20flow_chart_2.pdf)
 <br><br>
