@@ -32,6 +32,7 @@ func helloWorld(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Your IP address : %s\n\n", ipAddress)
 
 	nowTime, nowDate := ist()
+	fmt.Fprintf(w, "Indian Standard Time :-\n")
 	fmt.Fprintf(w, "Time : %s\n", nowTime)
 	fmt.Fprintf(w, "Date : %s\n\n", nowDate)
 }
