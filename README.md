@@ -1,6 +1,7 @@
 # Continuous Deployment with Docker + Travis + Heroku
 
 ## Travis-CI
+![Build Status](https://api.travis-ci.com/samihan25/CD_DTH.svg)
 You can see build status here: [click here](https://travis-ci.com/github/samihan25/CD_DTH)
 
 ## Docker Hub
