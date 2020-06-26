@@ -8,13 +8,32 @@ import (
 	"time"
 )
 
+//Prints Hello World!!
+func hello() string {
+	return "Hello World!!"
+}
+
+//Print Indian Standard Time (IST) which equals to UTC + 5:30 hr
+func ist() (string, string) {
+	loc, _ := time.LoadLocation("Asia/Kolkata")
+	nowTime := time.Now().In(loc).Format("3:04 PM")
+	nowDate := time.Now().In(loc).Format("02-01-2006 Monday")
+	return nowTime, nowDate
+}
+
 func helloWorld(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "\n\nHello World!!\n\n")
+
+	fmt.Fprintf(w, "\n\n")
+	fmt.Fprintf(w, hello())
+	fmt.Fprintf(w, "\n\n")
 	//fmt.Fprintf(w, "And I am ..... Ironman\n")
+
 	ipAddress, _, _ := net.SplitHostPort(r.RemoteAddr)
-	dt := time.Now()
 	fmt.Fprintf(w, "Your IP address : %s\n\n", ipAddress)
-	fmt.Fprintf(w, "Date and Time : %s\n\n", dt)
+
+	nowTime, nowDate := ist()
+	fmt.Fprintf(w, "Time : %s\n", nowTime)
+	fmt.Fprintf(w, "Date : %s\n\n", nowDate)
 }
 
 func main() {
